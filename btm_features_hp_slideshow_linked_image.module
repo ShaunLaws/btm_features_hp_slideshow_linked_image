@@ -1,0 +1,3 @@
+<?php
+
+include_once('btm_features_hp_slideshow_linked_image.features.inc');

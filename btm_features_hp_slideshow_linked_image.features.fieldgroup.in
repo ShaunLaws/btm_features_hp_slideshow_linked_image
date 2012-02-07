@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * Implementation of hook_fieldgroup_default_groups().
+ */
+function btm_features_hp_slideshow_linked_image_fieldgroup_default_groups() {
+  $groups = array();
+
+  // Exported group: group_slideshow
+  $groups['front_page_slide-group_slideshow'] = array(
+    'group_type' => 'standard',
+    'type_name' => 'front_page_slide',
+    'group_name' => 'group_slideshow',
+    'label' => 'Slide Show',
+    'settings' => array(
+      'form' => array(
+        'style' => 'fieldset',
+        'description' => '',
+      ),
+      'display' => array(
+        'weight' => '12',
+        'token' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        '2' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        '3' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        '4' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        'label' => 'above',
+        'teaser' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        'full' => array(
+          'format' => 'fieldset',
+          'exclude' => 0,
+        ),
+        'description' => '',
+      ),
+    ),
+    'weight' => '12',
+    'fields' => array(
+      '0' => 'field_slide',
+      '1' => 'field_slide_url',
+    ),
+  );
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Slide Show');
+
+  return $groups;
+}

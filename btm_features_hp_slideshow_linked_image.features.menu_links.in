@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Implementation of hook_menu_default_menu_links().
+ */
+function btm_features_hp_slideshow_linked_image_menu_default_menu_links() {
+  $menu_links = array();
+
+  // Exported menu link: navigation:admin/content/slideshow
+  $menu_links['navigation:admin/content/slideshow'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'admin/content/slideshow',
+    'router_path' => 'admin/content/slideshow',
+    'link_title' => 'Manage Front Page Slideshow',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '0',
+    'parent_path' => 'admin/content',
+  );
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Manage Front Page Slideshow');
+
+
+  return $menu_links;
+}

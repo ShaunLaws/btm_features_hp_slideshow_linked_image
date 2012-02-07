@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * Implementation of hook_user_default_permissions().
+ */
+function btm_features_hp_slideshow_linked_image_user_default_permissions() {
+  $permissions = array();
+
+  // Exported permission: create front_page_slide content
+  $permissions['create front_page_slide content'] = array(
+    'name' => 'create front_page_slide content',
+    'roles' => array(
+      '0' => 'Content Editor',
+      '1' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: delete any front_page_slide content
+  $permissions['delete any front_page_slide content'] = array(
+    'name' => 'delete any front_page_slide content',
+    'roles' => array(
+      '0' => 'Content Editor',
+      '1' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: delete own front_page_slide content
+  $permissions['delete own front_page_slide content'] = array(
+    'name' => 'delete own front_page_slide content',
+    'roles' => array(
+      '0' => 'Content Editor',
+      '1' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: edit any front_page_slide content
+  $permissions['edit any front_page_slide content'] = array(
+    'name' => 'edit any front_page_slide content',
+    'roles' => array(
+      '0' => 'Content Editor',
+      '1' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: edit own front_page_slide content
+  $permissions['edit own front_page_slide content'] = array(
+    'name' => 'edit own front_page_slide content',
+    'roles' => array(
+      '0' => 'Content Editor',
+      '1' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: view imagecache front_page_slide
+  $permissions['view imagecache front_page_slide'] = array(
+    'name' => 'view imagecache front_page_slide',
+    'roles' => array(
+      '0' => 'Super Admin',
+    ),
+  );
+
+  // Exported permission: view imagecache front_page_slide_thumbnail
+  $permissions['view imagecache front_page_slide_thumbnail'] = array(
+    'name' => 'view imagecache front_page_slide_thumbnail',
+    'roles' => array(
+      '0' => 'Super Admin',
+    ),
+  );
+
+  return $permissions;
+}
