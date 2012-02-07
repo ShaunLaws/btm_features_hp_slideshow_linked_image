@@ -24,7 +24,7 @@ None.
 
   - BTM Support HP Slideshow Linked Image - available at:
 
-    git@github.com:ShaunLaws/btm_support_hp_slideshow_simple.git
+    git@github.com:ShaunLaws/btm_support_hp_slideshow_linked_image.git
 
   - Features
   - ImageApi
